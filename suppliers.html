@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplier</title>
+   
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        padding: 40px;
+    }
+
+    .form-container {
+        background: #ffffff;
+        max-width: 600px;
+        margin: auto;
+        padding: 30px 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    button {
+        margin-top: 25px;
+        width: 100%;
+        padding: 12px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+</style>
+<link rel="stylesheet" href="CSS/bootstrap-5.3.7-dist/css/bootstrap.css">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-top: -50px; margin-bottom: 20px">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/LOGO1.png" alt="Logo" width="50px" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="nav" style="color: ;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./company products.html">Company Products</a>
+                        </li>
+                        <li class="nav item">
+                            <a class="nav-link" href="./sales.html">Sales Information</a>
+                        </li><br>
+                        <li class="nav item">
+                            <a class="nav-link" href="./suppliers.html">Company suppliers</a>
+                        </li>
+                </ul>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+      
+    
+        <div class="form-container">
+            <h2>Supplied Stock Record Form</h2>
+            <form>
+                <label for="product-name">Name of Product</label>
+                <input type="text" id="product-name" name="product-name" placeholder="e.g., Office Desk,dining table">
+    
+                <label for="product-type">Type of Product</label>
+                <input type="text" id="product-type" name="product-type" placeholder="e.g., Wooden Furniture">
+    
+                <label for="cost-price">Cost Price (shs)</label>
+                <input type="number" id="cost-price" name="cost-price" placeholder="e.g., 50,000">
+    
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" name="quantity" placeholder="e.g., 20">
+    
+                <label for="product-price">Product Price (shs)</label>
+                <input type="number" id="product-price" name="product-price" placeholder="e.g., 250">
+    
+                <label for="supplier-name">Supplier Name</label>
+                <input type="text" id="supplier-name" name="supplier-name" placeholder="e.g., ABC Furniture Supplies">
+    
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+    
+                <label for="quality">Quality of Product</label>
+                <select id="quality" name="quality">
+                    <option value="">Select Quality</option>
+                    <option value="high">Good</option>
+                    <option value="medium">Moderate</option>
+                    <option value="low">poor</option>
+                </select>
+                <br>
+                
+                <button type="submit">Save Record</button>
+            </form>
+        </div>
+    
+    </body>
+    
+    </html>
+
+   <link rel="stylesheet" href="CSS/bootstrap-5.3.7-dist/js/bootstrap.bundle.js"> 
+</body>
+</html>
